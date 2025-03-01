@@ -1,33 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   const baseURL = 'https://deckofcardsapi.com/api/deck';
 
-  async function drawOneCard() {
-    try {
-      const response = await axios.get(`${baseURL}/new/draw/`);
-      const { suit, value } = response.data.cards[0];
-      console.log(`${value.toLowerCase()} of ${suit.toLowerCase()}`);
-    } catch (error) {
-      console.error("Error fetching card data:", error);
-    }
-  }
-   drawOneCard();
+//   async function drawOneCard() {
+//     try {
+//       const response = await axios.get(`${baseURL}/new/draw/`);
+//       const { suit, value } = response.data.cards[0];
+//       console.log(`${value.toLowerCase()} of ${suit.toLowerCase()}`);
+//     } catch (error) {
+//       console.error("Error fetching card data:", error);
+//     }
+//   }
+//    drawOneCard();
   
   
- // Part Two
-  async function drawTwoSequentiallly() {
-    try {
-      const firstCardResponse = await axios.get(`${baseURL}/new/draw/`);
-      const deckId = firstCardResponse.data.deck_id;
-      const secondCardResponse = await axios.get(`${baseURL}/${deckId}/draw/`);
-        [firstCardResponse.data, secondCardResponse.data].forEach(cardData => {
-          const { suit, value } = cardData.cards[0];
-          console.log(`${value.toLowerCase()} of ${suit.toLowerCase()}`);
-        });
-      } catch (error) {
-        console.error("Error fetching card data:", error);
-      }
-    }
-    drawTwoSequentiallly();
+//  // Part Two
+//   async function drawTwoSequentiallly() {
+//     try {
+//       const firstCardResponse = await axios.get(`${baseURL}/new/draw/`);
+//       const deckId = firstCardResponse.data.deck_id;
+//       const secondCardResponse = await axios.get(`${baseURL}/${deckId}/draw/`);
+//         [firstCardResponse.data, secondCardResponse.data].forEach(cardData => {
+//           const { suit, value } = cardData.cards[0];
+//           console.log(`${value.toLowerCase()} of ${suit.toLowerCase()}`);
+//         });
+//       } catch (error) {
+//         console.error("Error fetching card data:", error);
+//       }
+//     }
+//     drawTwoSequentiallly();
   
   
   
