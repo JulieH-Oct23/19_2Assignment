@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(to bottom right, aqua, darkmagenta);
+}
+
+table {
+    margin: 10px;
+    padding:10px;
+    width: 90vw;
+    color: darkmagenta;
+}
+
+a {
+    color:rgb(239, 97, 220);
+}
+
+H1 {
+    color: rgb(239,97,220);
+}
+
+h2 {
+    color: aqua;
+}
+
+h3 {
+    color:darkmagenta;
+}
+
+th {
+    color:darkmagenta;
+}
+
+tr {
+    color: darkmagenta;
+}
+
+
+#notes {
+    background-color: rgb(239,97,220);
+    color:aqua;
+    padding:10px;
+    margin:10px;
+    position: relative;
+    width: 90vw;
+    border: solid 5px rgb(131, 247, 247);
+}
+
+#resources {
+    background: aqua;
+    color: rgb(239, 97, 220);
+    padding:10px;
+    margin:10px;
+    width: 90vw;
+    border: solid 5px rgb(239, 97, 220)
+}
