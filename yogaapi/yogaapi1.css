@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(4, 66, 83);
+    color: aliceblue;
+    width: 90vw;
+}
+
+#banner{
+    width: 900px;
+    height: 150px;
+    background-color: darkviolet;
+    margin: 10px;
+    padding:10px;
+    border: 3px;
+    position: relative center;
+}
+
+#pose {
+    color: hotpink;
+    width: 350px;
+    height: 500px;
+    background-color:chartreuse;
+    margin: 10px;
+    padding:10px;
+    border: 3px;
+}
+
+#name {
+    width: 500px;
+    height: 140px;
+    background-color:cyan;
+    margin: 10px;
+    padding:10px;
+    border: 3px;
+    position: relative;
+    left: 400px;
+    top: -530px;
+    color: hotpink
+
+}
+
+#bodyFocus {
+    width: 500px;
+    height: 140px;
+    background-color:darkgoldenrod;
+    margin: 10px;
+    padding:10px;
+    border: 3px;
+    position: relative;
+    left: 400px;
+    top: -520px;
+}
+
+#benefits {
+    width: 500px;
+    height: 140px;
+    background-color:hotpink;
+    margin: 10px;
+    padding:10px;
+    border: 3px;
+    position: relative;
+    left: 400px;
+    top: -510px;
+}
+
+#videos {
+    width: 900px;
+    height: 400px;
+    background-color: whitesmoke;
+    color: hotpink;
+    margin: 10px;
+    padding:10px;
+    border: 3px;
+    position: relative;
+    top: -500px;
+}
