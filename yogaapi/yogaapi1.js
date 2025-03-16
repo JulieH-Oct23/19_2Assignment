@@ -13,14 +13,17 @@ window.onload = async function( ) {
         let yoga = await res.json( );
         console.log(yoga);
 
-        let englishName = yoga['english_name'];
+        let yogaName = yoga['english_name'];
         let sanskritName = yoga['sanskrit_name'];
-        let benefits = yoga['pose_benefits'];
-        let cue = yoga['pose_description'];
-        let meaning = yoga['translation_name'];
-        let yogaImage = yoga['url_png'];
+        let yogaBenefits = yoga['pose_benefits'];
+        let yogaCue = yoga['pose_description'];
+        let yogaMeaning = yoga['translation_name'];
+        // let yogaImg = yoga['url_png']['url_svg']['url_svg_alt'];
 
-        res = await fetch(yoga['english_name'],['sanskrit_name']);
+        res = await fetch(yoga['english_name']);
         let yogaDesc = await res.json();
-        console.log(yogaDesc);
+
+        yogaDex[1] = {"english_name": yogaName, 'sanskrit_name': sanskritName, "pose_benefits": yogaBenefits, "pose_description": yogaCue, "translation_name": yogaMeaning}
+
+     
   }
