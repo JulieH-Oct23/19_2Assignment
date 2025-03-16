@@ -59,5 +59,5 @@ function updatePokemon ( ) {
         typesDiv.append(type);
     }
     document.getElementById('pokemon-description').innerText = pokeDex[this.id]["desc"]
-    document.getElementById('pokemon-abilities').innerText = pokeDex[1]['ability'];
+    document.getElementById('pokemon-abilities').innerText = pokeDex[this.id]['ability'];
 }
