@@ -3,21 +3,24 @@
   let yogaDex = {};
 
 window.onload = async function( ) {
-    getPose(1);
+    getYoga(1);
 }
 
-  async function getPose(num) {
-        let url='https://yoga-api-nzy4.onrender.com/v1/poses' + num.toString( );
+  async function getYoga(num) {
+        let url = "https://yoga-api-nzy4.onrender.com/v1/poses/"
         
         let res = await fetch(url);
-        let pose = await res.json( );
-        console.log(pose);
+        let yoga = await res.json( );
+        console.log(yoga);
 
-        let poseEnglishName = pose['english_name'];
-        let poseSanskritName = pose['sanskrit_name'];
-        let poseBenefits = benefits['pose_benefits'];
-        let poseCue = cue['pose_description'];
-        let poseVIdeo = video['url_video'];
+        let englishName = yoga['english_name'];
+        let sanskritName = yoga['sanskrit_name'];
+        let benefits = yoga['pose_benefits'];
+        let cue = yoga['pose_description'];
+        let meaning = yoga['translation_name'];
+        let yogaImage = yoga['url_png'];
 
+        res = await fetch(yoga['english_name'],['sanskrit_name']);
+        let yogaDesc = await res.json();
+        console.log(yogaDesc);
   }
-
