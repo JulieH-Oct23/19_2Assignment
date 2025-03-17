@@ -11,15 +11,23 @@
 <body>
     <div id="content-box">
         <div>
-            <div id="name">English and Sanskrit Name</div>
-            <div id="meaning">meaning of name</div>
+            <div id="name">
+                 <text label id="english_name"/>
+                 <text label id="sanskrit_name"/>
+            </div>
+            <div id="meaning" text label id="translation_name"></div>
+            </div>
         </div>
         <div id="left">
-            <div id="pose">pose</div>
+            <div id="pose">pose image</div>
+            <select name="poses" id="indvPose" onchange="test(event)">
+            </select>
         </div>
         <div id="right">
-            <div id="cue">cue</div>
-            <div id="benefits">benefits</div>
+            <div id="cue" text label id="pose_description">
+            </div>
+            <div id="benefits" text label id="pose_benefits"> 
+            </div>
         </div>
         <div>
             <div id="videos">videos</div>

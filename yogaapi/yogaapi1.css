@@ -23,6 +23,9 @@ padding: 3px;
 border: 3px solid yellowgreen;
 margin: 3px;
 border-radius: 10px;
+position: relative;
+margin-left: 25px;
+margin-top: -585px;
 }
 
 #right{
@@ -34,7 +37,7 @@ border: 3px solid hotpink;
 margin: 3px;
 border-radius: 10px;
 position: relative;
-margin-left: 330px;
+margin-left: 360px;
 margin-top: -465px;
 }
 
@@ -45,6 +48,7 @@ margin-top: -465px;
     border: 3px;
     margin: 3px;
     border-radius: 10px;
+    width: 850px;
 }
 
 #pose {
@@ -54,6 +58,14 @@ margin-top: -465px;
     padding:10px;
     border: 3px solid blue;
     border-radius: 10px;
+}
+
+#indvPose {
+    background-color:chartreuse;
+    padding: 3px;
+    border: 3px;
+    margin: 3px;
+    margin-left: 25px;
 }
 
 #name {
@@ -98,5 +110,6 @@ margin-top: -465px;
     border-radius: 10px;
     position: relative;
     margin-top: 20px;
-
+    margin-left:20px;
+    width: 825px;
 }
