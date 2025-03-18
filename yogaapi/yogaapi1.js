@@ -60,3 +60,12 @@ async function getPoses() {
   }
 
   console.log(poses)
+
+
+  function setPoseName(id) {
+    console.log(poses)
+    const pose = poses.find(p => p.id === parseInt(id))
+    const poseEnglishNameLabel = document.getElementById('english_pose_name')
+    poseEnglishNameLabel.innerHTML = pose['english_name']
+    console.log(pose)
+  }
