@@ -118,3 +118,49 @@ harryPotterChar.forEach(function(characters) {
     console.log(`${characters.name} belongs in ${characters.type}, where they developed the skill/talent to ${characters.skill}.`)
 });
 
+
+const family = [
+    {firstName: "Larry", lastName: "Moody", type: "Husband"},
+    {firstName: "Julie", lastName: "Marcum-Hart", type: "Wife"},
+    {firstName: "Ella", lastName: "Marcum", type: "Daughter"},
+    {firstName: "Wesley", lastName: "Moody", type: "Son"},
+    {firstName: "Harrison", lastName: "Hart", type: "Son"},
+    {firstName: "Booberry", lastName: "Moody", type: "Dog, St. Bernard"},
+    {firstName: "Yogi", lastName: "Moody", type: "Dog, Yorkshire Terrier"}
+];
+
+const moodyFamily = family.map(function(family)
+{
+    return {
+        status:`${family.firstName} is a ${family.type} in the ${family.lastName} Family. `, 
+    }
+});
+
+console.log(moodyFamily);
+
+
+
+
+
+
+// // filter Exercise
+// // const planets = [
+// // 	{name: "Mercury", temperature: 440, distance: 0.39},
+// // 	{name: "Venus", temperature: 737, distance: 0.72},
+// // 	{name: "Earth", temperature: 288, distance: 1},
+// // 	{name: "Mars", temperature: 253, distance: 1.5},
+// // 	{name: "Jupiter", temperature: 163, distance: 5.2},
+// // 	{name: "Saturn", temperature: 133, distance: 9.58},
+// // 	{name: "Uranus", temperature: 78, distance: 19.22},
+// // 	{name: "Neptune", temperature: 73, distance: 30.05}
+// // ];
+
+// const habitablePlanets = planets.filter(
+// 	function (planet)
+// 	{
+// 		return planet.temperature >= 253 && planet.temperature <= 323 &&
+// 		       planet.distance >= 0.75 && planet.distance <= 1.5;
+// 	}
+// );
+
+// console.log(habitablePlanets);

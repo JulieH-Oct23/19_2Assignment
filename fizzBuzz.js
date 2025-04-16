@@ -150,15 +150,57 @@
 //   num = num +1;
 // }
 
-let num = 1;
-while(num<53){
-  if(num % 2 ==0) {
-    console.log(num + " Even Number");
-  }
-  else {
-    console.log(num + " Odd Number");
-  }
-  num = num+1;
-}
+// let num = 1;
+// while(num<53){
+//   if(num % 2 ==0) {
+//     console.log(num + " Even Number");
+//   }
+//   else {
+//     console.log(num + " Odd Number");
+//   }
+//   num = num+1;
+// }
 
+
+// function greetInSpanish(name) {
+//   return 'Hola, ${}';
+// }
+
+// function getUserName(callback){
+//   let firstName = prompt ('Enter your first name');
+//   return callback(firstName);
+// }
+// getUserName(greetInSpanish);
+
+// function makeUnorderedList(array) {
+//   let listItems = array.map(function(element) {
+//     return `<li>${element}</li>`;
+//   });
+//   return `<ul>${listItems.join(' ')}</ul>`;
+// }
+
+// function getLocalWeather(postalCode){
+//   if (postalCode === undefined) {
+//     return `I don't know what the weather is like where you are.`;
+//   }
+//   return `Idaho don't know what the weather is like in ${postalCode}.  Try looking our the window.`;
+// }
+
+// const convertMilesToKM = function (distanceInMiles) {
+//   const distanceInKM = distanceInMiles *1.609;
+//   return distanceInKM;
+// };
+
+const myTruck = {
+  speed: 0,
+};
+const myCar = {
+  speed: 0,
+};
+
+function drive(vehicle, speedLimit) {
+  vehicle.speed = speedLimit;
+  this.speed = speedLimit;
+  console.log(`Driving at ${vehicle.speed} MPH.`);
+}
 
