@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Julie's Jeopardy</title>
+  <link rel="stylesheet" href="jeopardy.css">
+</head>
+<body>
+   
+    <!-- Top section -->
+    <header class="top-header">
+       <h1>Jeopardy!</h1>
+    </header>
+    <link rel="stylesheet" href="jeopardy.css">
+
+     <div class="board">
+
+        <table id="category-board">
+            <thead>
+                <tr>
+                    <th id="category-one">
+                        
+                    </th>
+                    <th id="category-two">
+                        
+                    </th>
+                    <th id="category-three">
+                        
+                    </th>
+                    <th id="category-four">
+                        
+                    </th>
+                    <th id="category-five">
+                        
+                    </th>
+                    <th id="category-six">
+                        
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="question-grid">
+                <tr>
+                    <td id="question-0-category-0" onclick="updateCell(0, 0)">?</td>
+                    <td id="question-0-category-1" onclick="updateCell(0, 1)">?</td>
+                    <td id="question-0-category-2" onclick="updateCell(0, 2)">?</td>
+                    <td id="question-0-category-3" onclick="updateCell(0, 3)">?</td>
+                    <td id="question-0-category-4" onclick="updateCell(0, 4)">?</td>
+                    <td id="question-0-category-5" onclick="updateCell(0, 5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-1-category-0" onclick="updateCell(1, 0)">?</td>
+                    <td id="question-1-category-1" onclick="updateCell(1, 1)">?</td>
+                    <td id="question-1-category-2" onclick="updateCell(1, 2)">?</td>
+                    <td id="question-1-category-3" onclick="updateCell(1, 3)">?</td>
+                    <td id="question-1-category-4" onclick="updateCell(1, 4)">?</td>
+                    <td id="question-1-category-5" onclick="updateCell(1, 5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-2-category-0" onclick="updateCell(2, 0)">?</td>
+                    <td id="question-2-category-1" onclick="updateCell(2, 1)">?</td>
+                    <td id="question-2-category-2" onclick="updateCell(2, 2)">?</td>
+                    <td id="question-2-category-3" onclick="updateCell(2, 3)">?</td>
+                    <td id="question-2-category-4" onclick="updateCell(2, 4)">?</td>
+                    <td id="question-2-category-5" onclick="updateCell(2, 5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-3-category-0" onclick="updateCell(3, 0)">?</td>
+                    <td id="question-3-category-1" onclick="updateCell(3, 1)">?</td>
+                    <td id="question-3-category-2" onclick="updateCell(3, 2)">?</td>
+                    <td id="question-3-category-3" onclick="updateCell(3, 3)">?</td>
+                    <td id="question-3-category-4" onclick="updateCell(3, 4)">?</td>
+                    <td id="question-3-category-5" onclick="updateCell(3, 5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-4-category-0" onclick="updateCell(4, 0)">?</td>
+                    <td id="question-4-category-1" onclick="updateCell(4, 1)">?</td>
+                    <td id="question-4-category-2" onclick="updateCell(4, 2)">?</td>
+                    <td id="question-4-category-3" onclick="updateCell(4, 3)">?</td>
+                    <td id="question-4-category-4" onclick="updateCell(4, 4)">?</td>
+                    <td id="question-4-category-5" onclick="updateCell(4, 5)">?</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+    
+     <div class="card-modal">
+        <div class=card-modal-inner>
+           <h2 class="clue-text"><!-- clue gets injected here --></h2>
+              <!-- <button type="submit">Start New Game!</button> -->
+           <div class="result">
+              <p class="result_success"></p>
+              <p class="result_fail"></p>
+              <p class="result_correct-answer">
+            <span class="result_correct-answer-text"></p>
+           </div>
+        </div>
+     </div>
+ </div>
+
+ <div id="button-wrapper">
+ <button id="button" onclick="restartGame()" type="submit">Start New Game!</button>
+ </div>
+
+ <script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash"></script>
+<script src="jeopardy.js"></script>
+
+</body>
+</html>
