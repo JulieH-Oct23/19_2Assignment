@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jeopardy.css">
+    <title>Jeopardy</title>
+</head>
+<body>
+    <h1>Jeopardy!</h1>
+    <div id="game-board-container">
+        <table>
+            <thead>
+                <tr>
+                    <th id="category-0"></th>
+                    <th id="category-1"></th>
+                    <th id="category-2"></th>
+                    <th id="category-3"></th>
+                    <th id="category-4"></th>
+                    <th id="category-5"></th>
+                </tr>
+            </thead>
+            <tbody id="main-board">
+                <tr>
+                    <td id="question-0-category-0" onclick="updateCard(0,0)">?</td>
+                    <td id="question-0-category-1" onclick="updateCard(0,1)">?</td>
+                    <td id="question-0-category-2" onclick="updateCard(0,2)">?</td>
+                    <td id="question-0-category-3" onclick="updateCard(0,3)">?</td>
+                    <td id="question-0-category-4" onclick="updateCard(0,4)">?</td>
+                    <td id="question-0-category-5" onclick="updateCard(0,5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-1-category-0" onclick="updateCard(1,0)">?</td>
+                    <td id="question-1-category-1" onclick="updateCard(1,1)">?</td>
+                    <td id="question-1-category-2" onclick="updateCard(1,2)">?</td>
+                    <td id="question-1-category-3" onclick="updateCard(1,3)">?</td>
+                    <td id="question-1-category-4" onclick="updateCard(1,4)">?</td>
+                    <td id="question-1-category-5" onclick="updateCard(1,5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-2-category-0" onclick="updateCard(2,0)">?</td>
+                    <td id="question-2-category-1" onclick="updateCard(2,1)">?</td>
+                    <td id="question-2-category-2" onclick="updateCard(2,2)">?</td>
+                    <td id="question-2-category-3" onclick="updateCard(2,3)">?</td>
+                    <td id="question-2-category-4" onclick="updateCard(2,4)">?</td>
+                    <td id="question-2-category-5" onclick="updateCard(2,5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-3-category-0" onclick="updateCard(3,0)">?</td>
+                    <td id="question-3-category-1" onclick="updateCard(3,1)">?</td>
+                    <td id="question-3-category-2" onclick="updateCard(3,2)">?</td>
+                    <td id="question-3-category-3" onclick="updateCard(3,3)">?</td>
+                    <td id="question-3-category-4" onclick="updateCard(3,4)">?</td>
+                    <td id="question-3-category-5" onclick="updateCard(3,5)">?</td>
+                </tr>
+                <tr>
+                    <td id="question-4-category-0" onclick="updateCard(4,0)">?</td>
+                    <td id="question-4-category-1" onclick="updateCard(4,1)">?</td>
+                    <td id="question-4-category-2" onclick="updateCard(4,2)">?</td>
+                    <td id="question-4-category-3" onclick="updateCard(4,3)">?</td>
+                    <td id="question-4-category-4" onclick="updateCard(4,4)">?</td>
+                    <td id="question-4-category-5" onclick="updateCard(4,5)">?</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="reset-button-container">
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+</body>
+
+<script src="jeopardy.js"></script>
+</html>

@@ -1,0 +1,48 @@
+#game-board-container {
+    display: flex;
+    justify-content: center;
+}
+
+#game-board-container table {
+    width: 600px;
+    border: 10px solid #115ff4;
+    border-collapse: collapse;
+}
+
+#game-board-container table th, #game-board-container table td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 3px solid #115ff4;
+    color: aliceblue;
+    padding:5px;
+}
+
+#main-board {
+    cursor: pointer;
+    background-color:  #060ce9;
+}
+
+#reset-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+body {
+background-color: #060ce9;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+table {
+    background-color: #060ce9;
+}
+
+#question {
+    padding: 10px;
+}
