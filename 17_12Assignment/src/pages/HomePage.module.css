@@ -1,0 +1,27 @@
+.home {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link {
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.link:hover {
+  background-color: #005bb5;
+}
