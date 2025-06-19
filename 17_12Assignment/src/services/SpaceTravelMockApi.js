@@ -69,7 +69,8 @@ class SpaceTravelMockApi {
           "Presenting the Astrolux Odyssey: a revolutionary spacecraft merging cutting-edge technology with lavish luxury, designed to usher 10,000 passengers into the solar system's embrace. A marvel of engineering, its sleek exterior is adorned with solar panels, fueling advanced propulsion while minimizing environmental impact." +
           "Within, the vessel transforms into a haven of opulence. Lavish suites offer cosmic panoramas, celestial artwork bedecks lounges, and sprawling gardens thrive in zero-gravity. Culinary excellence reigns in gourmet restaurants, while immersive theaters and VR chambers offer stellar entertainment." +
           "Safety remains paramount with cosmic radiation shielding and top-tier medical facilities. The Astrolux Odyssey not only advances space exploration but redefines elegance, uniting humanity's thirst for knowledge with a taste of the sublime.",
-        pictureUrl: null,
+        pictureUrl:
+          "https://www.google.com/url?sa=i&url=https%3A%2F%2Fenglish.elpais.com%2Fscience-tech%2F2023-05-01%2Fspaceships-use-physics-not-hollywood-magic-to-visit-distant-worlds.html&psig=AOvVaw2wXgCgkKERONPpgaUR7eU5&ust=1750383298647000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODwj4ys_I0DFQAAAAAdAAAAABAK",
         currentLocation: 2,
       },
     ],
