@@ -7,6 +7,12 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+body{
+  background-color: #0066cc;
+  display: flex;
+  justify-content: center;
+}
+
 
 label {
   font-weight: bold;
@@ -17,7 +23,7 @@ input,
 textarea,
 select {
   padding: 10px;
-  border: 2px solid salmon;
+  border: 1px solid salmon;
   border-radius: 20px;
   font-size: 1rem;
 }
