@@ -2,15 +2,13 @@
   width: 500px;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #0c55c3;
-  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 body{
-  background-color: #0066cc;
   display: flex;
   justify-content: center;
+
 }
 
 

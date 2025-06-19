@@ -4,7 +4,7 @@ import styles from "./HomePage.module.css";
 
 const HomePage = () => (
   <div className={styles.home}>
-       <h1>Welcome to Space Travel</h1>
+       <h1>Welcome to Your Space Travel Home</h1>
        <p>
         Command Spacecrafts to evacuate humanity from Earth and explore habitable planets.
        </p>

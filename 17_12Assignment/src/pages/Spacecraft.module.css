@@ -23,9 +23,10 @@
 
 .card {
   width: 350px;
-  border: 1px solid #ccc;
+  border: 1px solid salmon;
   border-radius: 12px;
   padding: 1rem;
+  margin: 1rem;
   background-color: #000000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -37,7 +38,7 @@
 }
 
 .deleteBtn {
-  background: #dc3545;
+  background: salmon;
   color: white;
   border: none;
   padding: 0.4rem 0.8rem;
@@ -80,8 +81,8 @@
 
 .imageContainer {
   width: 100%;
-  max-width: 300px; /* or any desired width */
-  height: 200px;     /* fixed height or responsive */
+  max-width: 300px; 
+  height: 200px;    
   overflow: hidden;
   background-color: #f0f0f0; /* optional */
 }

@@ -42,10 +42,13 @@ const SpacecraftsPage = () => {
         <ul className={styles.list}>
           {spacecrafts.map((sc) => (
             <li key={sc.id} className={styles.card}>
-              <h2>{sc.name}</h2>
+              <h1>{sc.name}</h1>
+              <br />
               <p>Capacity: {sc.capacity}</p>
-              <p>{sc.description}</p>
-              <Link to={`/spacecraft/${sc.id}`} className={styles.detailLink}>View Details</Link>
+              <br />
+              <p>Description: {sc.description}</p>
+              <br />
+              <Link to={`/spacecraft/${sc.id}`} className={styles.detailLink}>View Details</Link><br />
               <button className={styles.deleteBtn} onClick={() => handleDelete(sc.id)}>Destroy</button>
             </li>
           ))}

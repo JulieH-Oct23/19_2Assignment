@@ -50,7 +50,6 @@ const SpacecraftPage = () => {
 
   return (
     <div className={styles.container}>
-      <button onClick={() => navigate(-1)} className={styles.backButton}>Back</button>
 
       <h1>{spacecraft.name}</h1>
       <p><strong>Capacity:</strong> {spacecraft.capacity}</p>
