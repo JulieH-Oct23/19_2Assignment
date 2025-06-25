@@ -1,18 +1,14 @@
-import styles from ".components/NavigateBackButton.module.css";
 import { useNavigate } from "react-router-dom";
+import styles from "./NavigateBackButton.module.css";
 
-function NavigateBackButton ()
-{
-	let navigate = useNavigate();
+const NavigateBackButton = () => {
+  const navigate = useNavigate();
 
-	return (
-		<button
-			onClick={() => navigate(-1)}
-			className={styles.button}
-		>
-			Go Back
-		</button>
-	);
-}
+  return (
+    <button className={styles.backButton} onClick={() => navigate(-1)}>
+      ← Back
+    </button>
+  );
+};
 
 export default NavigateBackButton;

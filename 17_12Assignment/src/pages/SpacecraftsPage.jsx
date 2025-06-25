@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
+import NavigateBackButton from '../components/NavigateBackButton';
 import { destroySpacecraftById, getSpacecrafts } from '../services/SpaceTravelApi';
 import styles from './Spacecraft.module.css';
 
@@ -54,6 +55,7 @@ const SpacecraftsPage = () => {
           ))}
         </ul>
       )}
+      <NavigateBackButton />
     </div>
   );
 };

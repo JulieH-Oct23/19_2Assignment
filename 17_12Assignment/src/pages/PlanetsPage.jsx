@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import NavigateBackButton from '../components/NavigateBackButton';
 import { getPlanets } from '../services/SpaceTravelApi';
 import styles from './PlanetsPage.module.css';
 
@@ -42,6 +43,7 @@ const PlanetsPage = () => {
           ))}
         </div>
       )}
+      <NavigateBackButton />
     </div>
   );
 };

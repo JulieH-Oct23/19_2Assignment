@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Loading from '../components/LoadingSpinner.jsx';
+import NavigateBackButton from '../components/NavigateBackButton.jsx';
 import { getPlanets, getSpacecraftById, sendSpacecraftToPlanet } from '../services/SpaceTravelApi';
 import styles from './Spacecraft.module.css';
 
@@ -82,6 +83,7 @@ const SpacecraftPage = () => {
       {sendError && <p className={styles.error}>{sendError}</p>}
 
       <Link to="/spacecrafts" className={styles.backLink}>Back to Spacecrafts</Link>
+      <NavigateBackButton />
     </div>
   );
 };
